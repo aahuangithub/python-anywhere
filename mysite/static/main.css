@@ -1,0 +1,240 @@
+body{
+	background:#F5F5F5;
+	color:black;
+	margin:0;
+	font-family: sans-serif;
+	height:100%;
+	overflow:auto;
+}
+
+/*start nav-bar class */
+.nav{
+	background:rgba(255, 255, 255, 0.98);
+	margin:0;
+	padding:0;
+	width:100%;
+	position:fixed;
+	height:3rem;
+	border-bottom:1px solid rgba(127, 127, 127, 0.1);
+}
+.nav .nav-container{
+	list-style: none;
+	text-align: center;
+	margin:0 auto;
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+.nav .nav-container li{
+	color:black;
+	text-decoration: none;
+	padding: 1rem;
+	display: inline;
+}
+.nav .nav-container li:hover{
+	background:#ce93d8;
+	color:white;
+}
+.nav a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.logo{
+	position:absolute;
+	top:0.5rem;
+	left:1rem;
+}
+.soc-media{
+	position:absolute;
+	right:1rem;
+}
+.soc-media ul{
+	list-style: none;
+}
+.soc-media ul li{
+	display:inline;
+}
+.soc-media ul li img{
+	height:2rem;
+	width:2rem;
+	padding-left: 8px;
+	margin-top:-0.5rem;
+}
+.mobile-banner{
+	display: none;
+}
+/*end nav-bar class */
+
+/*start jumbotron style */
+.jumbotron{
+	padding-top:4.5rem;
+	padding-bottom:2rem;
+	text-align: center;
+	color:white;
+	margin:0 auto;
+
+	background:#7b1fa2;
+	min-height:15rem;
+	line-height: 1.1rem;
+
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+}
+.jumbotron h1{
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.jumbotron h3{
+	text-transform: uppercase;
+	font-weight: normal;
+	font-style: italic;
+}
+.jumbotron p{
+	max-width: 600px;
+	margin:0 auto;
+	line-height: 1.5rem;
+}
+/*end jumbotron style*/
+
+/*start article styles*/
+article{
+	text-align:left;
+	background: white;
+	color:black;
+	padding:1.5rem;
+	line-height: 1.5rem;
+	margin:0 auto;
+	margin-top: 2rem;
+	max-width:900px;
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+}
+article .content{
+  /*empty*/
+}
+article .has-links{
+	padding-bottom:1rem;
+	margin-bottom:1rem;
+	border-bottom:3px solid gray;
+}
+article h1{
+	margin-top: 8px;
+	margin-bottom: 8px;
+  font-size:2rem;
+  line-height:2rem;
+}
+article date{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-style: italic;
+}
+article .links{
+	overflow-x: auto;
+}
+
+/*end article styles*/
+/*begin footer styles*/
+footer{
+	padding-top:1rem;
+	line-height: 1.5rem;
+	text-align: center;
+	min-height:8rem;
+	background: #e1bee7;
+	color: #512e57;
+	width:100%;
+	margin-top: 2rem;
+}
+footer a{
+	color:#512e57;
+}
+/*end footer styles*/
+
+/*put mobile css here*/
+@media screen and (max-width: 900px){
+	header{
+		padding-bottom:2.5rem;
+	}
+
+	/*start nav-bar style*/
+	.mobile-banner{
+		display:inline;
+		position:fixed;
+		padding:0;
+		width:100%;
+		height:2.5rem;
+		background: #fdfafd;
+		z-index: 99;
+		color:black;
+		text-align: center;
+		-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.4);
+		-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.4);
+		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.4);
+	}
+	.mobile-banner #menu{
+		position:fixed;
+		left:-3px;
+		top:-0.25rem;
+		font-size:2rem;
+		cursor:pointer;
+	}
+	.mobile-banner .mobile-logo{
+		margin:0 auto;
+		padding:0.5rem;
+		font-size: 1.5rem;
+	}
+	.nav{
+		overflow:hidden;
+		background: #e1bee7;
+		display:none;
+		height:125%;
+		position:fixed;
+	}
+	.nav .nav-container{
+		padding:0;
+		padding-top: 2.5rem;
+		margin:0 auto;
+		border-bottom: 2px solid #AAAAAA;
+	}
+	.nav .nav-container li{
+		background: white;
+		width:100%;
+		padding:0;
+		line-height: 3rem;
+		border-bottom: 1px solid #666666;
+		font-size: 1rem;
+		display:inline-block;
+	}
+	.nav .nav-container li:hover{
+		background: #ce93d8;
+	}
+	.soc-media{
+		text-align: center;
+		position:fixed;
+		right:0;
+		left:0;
+		bottom:1rem;
+	}
+		/* it's off-centered lol */
+	.soc-media ul li img{
+		height:3rem;
+		width:3rem;
+		padding: 8px;
+		margin-top:-0.5rem;
+	}
+	/*end nav-bar style */
+
+	/*start jumbotron style */
+	.jumbotron{
+		padding:0.75rem;
+		padding-top:2rem;
+
+	}
+	/*end jumbotron style*/
+	.article{
+		max-width: 90vw;
+	}
+	.article h1{
+		text-align: center;
+	}
+}
